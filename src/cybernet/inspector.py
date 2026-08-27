@@ -2,7 +2,7 @@
 
 import logging
 from typing import List, Dict, Any, Optional
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass
 from datetime import datetime
 
 logger = logging.getLogger(__name__)
@@ -61,7 +61,7 @@ class PortalInspector:
                 'dropdowns': await self._find_dropdowns(),
                 'tables': await self._find_tables(),
                 'navigation': await self._find_navigation(),
-                'visible_text': await self._get_visible_headings(),
+                'visible_headings': await self._get_visible_headings(),
             }
             
             # Count elements

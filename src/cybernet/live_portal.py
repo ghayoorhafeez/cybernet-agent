@@ -143,6 +143,3 @@ class LiveCybernetPortal:
             return "Not connected"
         
         return self.page.url
-    
-    # Phase 1: Inspection Only (No automation of login, activation, renewal)
-    # Phase 2+: Will add actual portal operations
