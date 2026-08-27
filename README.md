@@ -1,47 +1,49 @@
-# Cybernet Agent
-
-An intelligent autonomous agent for cybersecurity monitoring and threat detection.
+# Cybernet NBB AI Voice Operator
 
 **Made by Ghayoor Hafeez**
 
-## Project Overview
+A real-time AI voice operator for the authorized Cybernet NBB portal at https://partner.nationalbroadband.pk/
 
-Cybernet Agent is an advanced autonomous system designed to monitor network security, detect threats in real-time, and provide intelligent responses to security incidents.
-
-## Phase 1: Core Infrastructure & Monitoring System
-
-### Features
-- Basic security monitoring framework
-- Log collection and parsing
-- Threat detection engine (initial version)
-- Alerting system
-- RESTful API for agent control
-- Web dashboard for monitoring
-- Unit and integration tests
-
-## Project Structure
+## Core Architecture
 
 ```
-cybernet-agent/
-├── src/
-│   ├── __init__.py
-│   ├── config.py              # Configuration management
-│   ├── logger.py              # Logging setup
-│   ├── monitoring/            # Monitoring module
-│   ├── detection/             # Threat detection module
-│   ├── alerting/              # Alerting system
-│   └── api/                   # REST API
-├── tests/
-│   ├── __init__.py
-│   ├── test_monitoring.py
-│   ├── test_detection.py
-│   ├── test_alerting.py
-│   └── test_api.py
-├── dashboard/                 # Web dashboard
-├── requirements.txt
-├── setup.py
-└── main.py
+VOICE COMMAND
+    ↓
+GEMINI LIVE API
+    ↓
+Real-Time Speech + Conversation
+    ↓
+AI Understands Intent & Context
+    ↓
+PLANNER Creates Structured Steps
+    ↓
+TOOL Selection & Validation
+    ↓
+PERMISSION / CONFIRMATION CHECK
+    ↓
+PLAYWRIGHT Browser Execution
+    ↓
+Authenticated Cybernet NBB Portal
+    ↓
+Portal Result Verification
+    ↓
+Structured Result
+    ↓
+GEMINI Generates Natural Response
+    ↓
+LIVE VOICE RESPONSE
 ```
+
+## Phase 1: Foundation & Dashboard
+
+Phase 1 includes:
+- PySide6 desktop dashboard
+- Plugin system with auto-discovery
+- SQLite persistent memory
+- Tool registry & permission system
+- Mock Cybernet portal
+- Comprehensive logging
+- Full test suite
 
 ## Installation
 
@@ -49,6 +51,7 @@ cybernet-agent/
 git clone https://github.com/ghayoorhafeez/cybernet-agent.git
 cd cybernet-agent
 pip install -r requirements.txt
+cp .env.example .env
 ```
 
 ## Usage
@@ -57,11 +60,23 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## Testing
+## Development Phases
 
-```bash
-pytest tests/ -v
-```
+- **Phase 1** ✓: Dashboard, Plugins, Memory, Tools, Permissions, Mock Portal
+- **Phase 2**: Gemini Live API, Microphone, Voice
+- **Phase 3**: Playwright, Browser Automation
+- **Phase 4**: Customer Search, Status, Package Info
+- **Phase 5**: Package Activation, Renewal, Verification
+- **Phase 6**: Weather, News, Reminders, Clipboard
+- **Phase 7**: Vision, Advanced Features
+
+## Security
+
+- No hardcoded credentials
+- Environment variables only
+- Permission system for write operations
+- Result verification
+- Audit logging
 
 ## License
 
